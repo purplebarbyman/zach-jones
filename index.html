@@ -252,6 +252,45 @@
         padding: 1rem;
       }
     }
+    .bio-section {
+  background: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(29,60,52,0.07);
+}
+.bio-section h2 {
+  color: #25705A;
+  margin-top: 0;
+  text-align: center;
+}
+.bio-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.bio-card {
+  background: #FFF3E0;
+  border-left: 6px solid #F9A825;
+  border-radius: 10px;
+  padding: 1.5rem;
+  flex: 1 1 320px;
+  min-width: 270px;
+  max-width: 420px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(29,60,52,0.05);
+}
+.bio-card h3 {
+  margin-top: 0;
+  color: #F9A825;
+}
+@media (max-width: 900px) {
+  .bio-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
   </style>
 </head>
 <body>
@@ -342,6 +381,32 @@
         Email: info@zach-jones.net
       </p>
       <div class="contact-buttons">
+        <section id="bio" class="bio-section">
+  <h2>About Zachary D. Jones</h2>
+  <div class="bio-cards">
+    <div class="bio-card concise-bio">
+      <h3>Concise Bio</h3>
+      <p>
+        Zachary D. Jones is a Health and Wellness Coach with over five years of experience, currently practicing at the James Haley VHA in Lakeland, FL. An Air Force veteran (2003–2007), Zachary specializes in helping clients overcome fatigue, manage weight, and thrive with thyroid health challenges.
+      </p>
+    </div>
+    <div class="bio-card expanded-bio">
+      <h3>Expanded Bio</h3>
+      <p>
+        Welcome! I’m Zachary D. Jones, founder of Energize & Empower Coaching, LLC, and your dedicated Health and Wellness Coach based in Lakeland, Florida. With over five years of experience, I currently serve clients at the James Haley VHA, focusing on helping adults overcome fatigue, achieve sustainable weight loss, and manage thyroid health—especially for those living with Hashimoto’s.
+      </p>
+      <p>
+        Before my coaching career, I proudly served in the United States Air Force from 2003 to 2007. The discipline, resilience, and commitment I learned during my service now fuel my passion for supporting others on their wellness journeys.
+      </p>
+      <p>
+        My approach is holistic and practical, tailored to your unique needs and goals. I believe in sustainable lifestyle changes, not quick fixes. Together, we’ll create a personalized roadmap to help you reclaim your energy, improve your well-being, and live life to the fullest.
+      </p>
+      <p>
+        Outside of coaching, I enjoy exploring the outdoors, trying new healthy recipes, and connecting with my community. Let’s work together to energize and empower your life!
+      </p>
+    </div>
+  </div>
+</section>
 <a href="https://wa.me/18159544398" target="_blank" class="contact-btn whatsapp-btn">
   <span class="wa-icon-bg">
     <!-- WhatsApp SVG Icon -->

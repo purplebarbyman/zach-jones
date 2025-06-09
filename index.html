@@ -38,6 +38,7 @@
       text-decoration: none;
       font-weight: bold;
       transition: color 0.2s;
+      cursor: pointer;
     }
     nav a:hover {
       color: #F9A825;
@@ -97,46 +98,47 @@
       border: none;
       cursor: pointer;
     }
-.whatsapp-btn {
-  background: #075E54;
-  color: #fff;
-  font-weight: bold;
-  border: none;
-  box-shadow: 0 2px 8px rgba(7, 94, 84, 0.18);
-  font-size: 1.08rem;
-  letter-spacing: 0.5px;
-  padding: 0.9rem 1.7rem;
-  transition: background 0.2s, color 0.2s, transform 0.1s;
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.whatsapp-btn:hover,
-.whatsapp-btn:focus {
-  background: #128C7E;
-  color: #fff;
-  transform: translateY(-2px) scale(1.05);
-  outline: none;
-}
-
-.wa-icon-bg {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  border-radius: 50%;
-  width: 38px;
-  height: 38px;
-  margin-right: 10px;
-  box-shadow: 0 2px 8px rgba(7, 94, 84, 0.15);
-  border: 2px solid #25D366;
-  transition: box-shadow 0.2s;
-}
-
-.whatsapp-btn:hover .wa-icon-bg {
-  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.25), 0 0 0 4px #128C7E33;
-}
+    .whatsapp-btn {
+      background: #075E54;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      box-shadow: 0 2px 8px rgba(7, 94, 84, 0.18);
+      font-size: 1.08rem;
+      letter-spacing: 0.5px;
+      padding: 0.9rem 1.7rem;
+      transition: background 0.2s, color 0.2s, transform 0.1s;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .whatsapp-btn:hover,
+    .whatsapp-btn:focus {
+      background: #128C7E;
+      color: #fff;
+      transform: translateY(-2px) scale(1.05);
+      outline: none;
+    }
+    .wa-icon-bg {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border-radius: 50%;
+      width: 38px;
+      height: 38px;
+      margin-right: 10px;
+      box-shadow: 0 2px 8px rgba(7, 94, 84, 0.15);
+      border: 2px solid #25D366;
+      transition: box-shadow 0.2s;
+    }
+    .whatsapp-btn:hover .wa-icon-bg {
+      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.25), 0 0 0 4px #128C7E33;
+    }
+    .email-btn {
+      background: #F9A825;
+      color: #1D3C34;
+    }
     .email-btn:hover {
       background: #25705A;
       color: #FFF3E0;
@@ -233,6 +235,45 @@
       border-left: 6px solid #F9A825;
       font-size: 1.05rem;
     }
+    .bio-section {
+      background: #fff;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(29,60,52,0.07);
+    }
+    .bio-section h2 {
+      color: #25705A;
+      margin-top: 0;
+      text-align: center;
+    }
+    .bio-cards {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .bio-card {
+      background: #FFF3E0;
+      border-left: 6px solid #F9A825;
+      border-radius: 10px;
+      padding: 1.5rem;
+      flex: 1 1 320px;
+      min-width: 270px;
+      max-width: 420px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 8px rgba(29,60,52,0.05);
+    }
+    .bio-card h3 {
+      margin-top: 0;
+      color: #F9A825;
+    }
+    @media (max-width: 900px) {
+      .bio-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
     @media (max-width: 700px) {
       .home-columns {
         flex-direction: column;
@@ -252,45 +293,6 @@
         padding: 1rem;
       }
     }
-    .bio-section {
-  background: #fff;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(29,60,52,0.07);
-}
-.bio-section h2 {
-  color: #25705A;
-  margin-top: 0;
-  text-align: center;
-}
-.bio-cards {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.bio-card {
-  background: #FFF3E0;
-  border-left: 6px solid #F9A825;
-  border-radius: 10px;
-  padding: 1.5rem;
-  flex: 1 1 320px;
-  min-width: 270px;
-  max-width: 420px;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 8px rgba(29,60,52,0.05);
-}
-.bio-card h3 {
-  margin-top: 0;
-  color: #F9A825;
-}
-@media (max-width: 900px) {
-  .bio-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-}
   </style>
 </head>
 <body>
@@ -299,8 +301,10 @@
     <p>Transform your health and wellness journey</p>
   </header>
   <nav>
-    <a href="/">Home</a>
+    <a href="#home">Home</a>
     <a href="#services">Services</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#bio">Bio</a>
     <a href="#contact">Contact</a>
   </nav>
   <main>
@@ -374,52 +378,48 @@
       </form>
       <div id="quiz-result" class="quiz-result"></div>
     </section>
+    <section id="bio" class="bio-section">
+      <h2>About Zachary D. Jones</h2>
+      <div class="bio-cards">
+        <div class="bio-card concise-bio">
+          <h3>Concise Bio</h3>
+          <p>
+            Zachary D. Jones is a Health and Wellness Coach with over five years of experience, currently practicing at the James Haley VHA in Lakeland, FL. An Air Force veteran (2003–2007), Zachary specializes in helping clients overcome fatigue, manage weight, and thrive with thyroid health challenges.
+          </p>
+        </div>
+        <div class="bio-card expanded-bio">
+          <h3>Expanded Bio</h3>
+          <p>
+            Welcome! I’m Zachary D. Jones, founder of Energize & Empower Coaching, LLC, and your dedicated Health and Wellness Coach based in Lakeland, Florida. With over five years of experience, I currently serve clients at the James Haley VHA, focusing on helping adults overcome fatigue, achieve sustainable weight loss, and manage thyroid health—especially for those living with Hashimoto’s.
+          </p>
+          <p>
+            Before my coaching career, I proudly served in the United States Air Force from 2003 to 2007. The discipline, resilience, and commitment I learned during my service now fuel my passion for supporting others on their wellness journeys.
+          </p>
+          <p>
+            My approach is holistic and practical, tailored to your unique needs and goals. I believe in sustainable lifestyle changes, not quick fixes. Together, we’ll create a personalized roadmap to help you reclaim your energy, improve your well-being, and live life to the fullest.
+          </p>
+          <p>
+            Outside of coaching, I enjoy exploring the outdoors, trying new healthy recipes, and connecting with my community. Let’s work together to energize and empower your life!
+          </p>
+        </div>
+      </div>
+    </section>
     <section id="contact">
       <h2>Contact Us</h2>
       <p>Ready to take the next step? Reach out today!</p>
-      <p>
-        Email: info@zach-jones.net
-      </p>
+      <p>Email: info@zach-jones.net</p>
       <div class="contact-buttons">
-        <section id="bio" class="bio-section">
-  <h2>About Zachary D. Jones</h2>
-  <div class="bio-cards">
-    <div class="bio-card concise-bio">
-      <h3>Concise Bio</h3>
-      <p>
-        Zachary D. Jones is a Health and Wellness Coach with over five years of experience, currently practicing at the James Haley VHA in Lakeland, FL. An Air Force veteran (2003–2007), Zachary specializes in helping clients overcome fatigue, manage weight, and thrive with thyroid health challenges.
-      </p>
-    </div>
-    <div class="bio-card expanded-bio">
-      <h3>Expanded Bio</h3>
-      <p>
-        Welcome! I’m Zachary D. Jones, founder of Energize & Empower Coaching, LLC, and your dedicated Health and Wellness Coach based in Lakeland, Florida. With over five years of experience, I currently serve clients at the James Haley VHA, focusing on helping adults overcome fatigue, achieve sustainable weight loss, and manage thyroid health—especially for those living with Hashimoto’s.
-      </p>
-      <p>
-        Before my coaching career, I proudly served in the United States Air Force from 2003 to 2007. The discipline, resilience, and commitment I learned during my service now fuel my passion for supporting others on their wellness journeys.
-      </p>
-      <p>
-        My approach is holistic and practical, tailored to your unique needs and goals. I believe in sustainable lifestyle changes, not quick fixes. Together, we’ll create a personalized roadmap to help you reclaim your energy, improve your well-being, and live life to the fullest.
-      </p>
-      <p>
-        Outside of coaching, I enjoy exploring the outdoors, trying new healthy recipes, and connecting with my community. Let’s work together to energize and empower your life!
-      </p>
-    </div>
-  </div>
-</section>
-<a href="https://wa.me/18159544398" target="_blank" class="contact-btn whatsapp-btn">
-  <span class="wa-icon-bg">
-    <!-- WhatsApp SVG Icon -->
-    <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <circle cx="16" cy="16" r="16" fill="#25D366"/>
-      <path d="M22.6 19.9c-.3-.2-1.7-.8-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.3-.8-.7-1.3-1.6-1.5-1.9-.2-.3 0-.5.1-.7.1-.1.2-.3.3-.4.1-.1.1-.2.2-.4.1-.2 0-.3 0-.4 0-.1-.7-1.7-.9-2.3-.2-.5-.4-.4-.7-.4h-.6c-.2 0-.4.1-.5.2-.2.2-.7.7-.7 1.6 0 .2 0 .4.1.6.2.5.6 1.5 1.8 2.7 1.3 1.3 2.7 1.7 3.2 1.9.5.2 1 .2 1.3.1.4-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1.1z" fill="#fff"/>
-    </svg>
-  </span>
-  <span style="font-weight: bold; font-size: 1.08rem;">Message Us on WhatsApp</span>
-</a>
+        <a href="https://wa.me/18159544398" target="_blank" class="contact-btn whatsapp-btn">
+          <span class="wa-icon-bg">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="16" cy="16" r="16" fill="#25D366"/>
+              <path d="M22.6 19.9c-.3-.2-1.7-.8-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.3-.8-.7-1.3-1.6-1.5-1.9-.2-.3 0-.5.1-.7.1-.1.2-.3.3-.4.1-.1.1-.2.2-.4.1-.2 0-.3 0-.4 0-.1-.7-1.7-.9-2.3-.2-.5-.4-.4-.7-.4h-.6c-.2 0-.4.1-.5.2-.2.2-.7.7-.7 1.6 0 .2 0 .4.1.6.2.5.6 1.5 1.8 2.7 1.3 1.3 2.7 1.7 3.2 1.9.5.2 1 .2 1.3.1.4-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1.1z" fill="#fff"/>
+            </svg>
+          </span>
+          <span style="font-weight: bold; font-size: 1.08rem;">Message Us on WhatsApp</span>
+        </a>
         <a href="mailto:info@zach-jones.net" class="contact-btn email-btn">
           <span style="vertical-align: middle; margin-right: 8px;">
-            <!-- Email SVG Icon -->
             <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;">
               <circle cx="16" cy="16" r="16" fill="#F9A825"/>
               <path d="M8 12l8 6 8-6v8a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2v-8zm16-2H8a2 2 0 0 0-2 2l10 7 10-7a2 2 0 0 0-2-2z" fill="#fff"/>
@@ -432,7 +432,6 @@
   </main>
   <footer>
     <p>&copy; 2025 Energize & Empower Coaching LLC</p>
-    <!-- Spanish phrase for reference -->
     <p style="font-size: 0.8rem; opacity: 0.8;">Haz clic en el botón verde para enviarnos un mensaje directo por WhatsApp.</p>
   </footer>
   <script>

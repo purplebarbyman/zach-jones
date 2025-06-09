@@ -97,15 +97,23 @@
       border: none;
       cursor: pointer;
     }
-    .whatsapp-btn {
-      background: #25D366;
-      color: #fff;
-    }
-    .whatsapp-btn:hover {
-      background: #128C7E;
-      color: #fff;
-      transform: translateY(-2px) scale(1.03);
-    }
+.whatsapp-btn {
+  background: #25D366;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 2px 8px rgba(37, 211, 102, 0.15);
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+.whatsapp-btn:hover,
+.whatsapp-btn:focus {
+  background: #128C7E;
+  color: #fff;
+  transform: translateY(-2px) scale(1.03);
+  outline: none;
+}
+
     .email-btn {
       background: #F9A825;
       color: #1D3C34;

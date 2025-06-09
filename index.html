@@ -199,6 +199,35 @@
   .home-visual {
     margin-top: 1rem;
   }
+  .quiz-section {
+  background: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(29,60,52,0.07);
+}
+.quiz-question {
+  margin-bottom: 1.5rem;
+}
+.quiz-question h3 {
+  color: #25705A;
+  margin-bottom: 0.5rem;
+}
+.quiz-question label {
+  display: block;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.quiz-question input[type="radio"] {
+  margin-right: 0.5rem;
+}
+.quiz-result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #FFF3E0;
+  border-radius: 8px;
+  border-left: 6px solid #F9A825;
+  font-size: 1.05rem;
 }
   </style>
 </head>
@@ -250,6 +279,39 @@
       <p>We will be starting Mind Body Medicine groups in the future to support holistic wellness.</p>
       <p>Currently, we offer 1-on-1 coaching sessions where we meet with clients on an individual basis.</p>
     </section>
+    <section id="quiz" class="quiz-section">
+  <h2>Is Your Thyroid Holding You Back?</h2>
+  <p>Take this quick quiz to discover if your thyroid might be affecting your energy and wellness.</p>
+  <form id="thyroid-quiz">
+    <div class="quiz-question">
+      <h3>1. Do you often feel fatigued, even after a full night’s sleep?</h3>
+      <label><input type="radio" name="q1" value="yes"> Yes</label>
+      <label><input type="radio" name="q1" value="no"> No</label>
+    </div>
+    <div class="quiz-question">
+      <h3>2. Have you noticed unexplained weight gain or difficulty losing weight?</h3>
+      <label><input type="radio" name="q2" value="yes"> Yes</label>
+      <label><input type="radio" name="q2" value="no"> No</label>
+    </div>
+    <div class="quiz-question">
+      <h3>3. Do you feel cold more often than those around you?</h3>
+      <label><input type="radio" name="q3" value="yes"> Yes</label>
+      <label><input type="radio" name="q3" value="no"> No</label>
+    </div>
+    <div class="quiz-question">
+      <h3>4. Do you experience dry skin, hair loss, or brittle nails?</h3>
+      <label><input type="radio" name="q4" value="yes"> Yes</label>
+      <label><input type="radio" name="q4" value="no"> No</label>
+    </div>
+    <div class="quiz-question">
+      <h3>5. Do you have trouble concentrating or feel “foggy” throughout the day?</h3>
+      <label><input type="radio" name="q5" value="yes"> Yes</label>
+      <label><input type="radio" name="q5" value="no"> No</label>
+    </div>
+    <button type="submit" class="cta-button">Get Your Results</button>
+  </form>
+  <div id="quiz-result" class="quiz-result"></div>
+</section>
 <section id="contact">
   <h2>Contact Us</h2>
   <p>Ready to take the next step? Reach out today!</p>

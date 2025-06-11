@@ -336,6 +336,47 @@
       color: var(--primary);
       font-weight: bold;
     }
+    .process-section {
+  background: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(29,60,52,0.07);
+}
+.process-section h2 {
+  text-align: center;
+  color: #25705A;
+  margin-top: 0;
+}
+.process-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.step {
+  background: #FFF3E0;
+  border-left: 6px solid #F9A825;
+  border-radius: 10px;
+  padding: 1.5rem;
+  flex: 1 1 220px;
+  min-width: 220px;
+  max-width: 280px;
+  box-shadow: 0 2px 8px rgba(29,60,52,0.05);
+}
+.step h3 {
+  color: #F9A825;
+  margin-top: 0;
+}
+@media (max-width: 900px) {
+  .process-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+  .step {
+    max-width: 100%;
+  }
+}
     @media (max-width: 900px) {
       .bio-cards, .home-columns {
         flex-direction: column;
@@ -446,6 +487,27 @@
         </div>
       </div>
     </section>
+    <section id="process" class="process-section">
+  <h2>My Coaching Process: Simple and Effective</h2>
+  <div class="process-steps">
+    <div class="step">
+      <h3>1. Initial Assessment</h3>
+      <p>We’ll start with a comprehensive conversation about your health, lifestyle, and goals. I’ll listen to your story, assess your needs, and gather all the information to create a plan that’s right for you.</p>
+    </div>
+    <div class="step">
+      <h3>2. Personalized Plan</h3>
+      <p>Based on your assessment, I’ll design a customized coaching plan tailored to your unique goals and challenges. Together, we’ll set clear, achievable steps to help you move forward.</p>
+    </div>
+    <div class="step">
+      <h3>3. Ongoing Support</h3>
+      <p>You’ll receive regular check-ins, practical guidance, and encouragement as you work toward your goals. I’ll be there to help you overcome obstacles, celebrate wins, and keep you motivated.</p>
+    </div>
+    <div class="step">
+      <h3>4. Progress & Adjustment</h3>
+      <p>We’ll review your progress together and adjust your plan as needed. My goal is to help you build lasting habits and achieve sustainable results.</p>
+    </div>
+  </div>
+</section>
     <section id="resources" class="resources-section">
       <h2>Wellness Resources</h2>
       <div class="resource-card">

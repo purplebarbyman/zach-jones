@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Energize & Empower Coaching – Health & Wellness Coaching for Obesity, Diabetes & Blood Pressure</title>
+  <title>Energize & Empower Coaching – Health Coaching for Obesity, Diabetes & Blood Pressure</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -98,14 +98,17 @@
       color: var(--light);
       transform: translateY(-2px) scale(1.03);
     }
-    footer {
-      background: var(--nav-bg);
-      color: var(--light);
-      text-align: center;
+    .highlight-coming-soon {
+      background: #FFF8E1;
+      border-left: 6px solid var(--accent);
+      color: #865200;
       padding: 1.5rem;
-      margin-top: 2rem;
-      border-top-left-radius: 30px 15px;
-      border-top-right-radius: 30px 15px;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      font-size: 1.12rem;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(249,168,37,0.08);
     }
     .contact-buttons {
       display: flex;
@@ -238,36 +241,6 @@
       font-size: 1.05rem;
       text-align: center;
     }
-    .quiz-section {
-      background: var(--white);
-      padding: 2rem;
-      margin-bottom: 2rem;
-      border-radius: 16px;
-      box-shadow: 0 4px 16px rgba(29,60,52,0.07);
-    }
-    .quiz-question {
-      margin-bottom: 1.5rem;
-    }
-    .quiz-question h3 {
-      color: var(--primary);
-      margin-bottom: 0.5rem;
-    }
-    .quiz-question label {
-      display: block;
-      margin: 0.5rem 0;
-      cursor: pointer;
-    }
-    .quiz-question input[type="radio"] {
-      margin-right: 0.5rem;
-    }
-    .quiz-result {
-      margin-top: 1.5rem;
-      padding: 1.5rem;
-      background: var(--testimonial-bg);
-      border-radius: 8px;
-      border-left: 6px solid var(--accent);
-      font-size: 1.05rem;
-    }
     .bio-section {
       background: var(--white);
       padding: 2rem;
@@ -354,6 +327,24 @@
       margin-top: 1.5rem;
       color: #666;
     }
+    .coming-soon-section {
+      background: #FFF8E1;
+      border-left: 6px solid #F9A825;
+      color: #865200;
+      padding: 2rem;
+      border-radius: 14px;
+      margin-bottom: 3rem;
+      box-shadow: 0 2px 8px rgba(249,168,37,0.08);
+      text-align: center;
+    }
+    .coming-soon-section h2 {
+      color: #F9A825;
+      margin-bottom: 0.5rem;
+    }
+    .coming-soon-section p {
+      font-size: 1.15rem;
+      margin: 0.5rem 0 0 0;
+    }
     @media (max-width: 900px) {
       .bio-cards, .home-columns, .pricing-cards {
         flex-direction: column;
@@ -397,6 +388,7 @@
     <a href="#services">Services</a>
     <a href="#bio">Bio</a>
     <a href="#pricing">Pricing</a>
+    <a href="#coming-soon">Coming Soon</a>
     <a href="#quiz">Quiz</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -409,12 +401,11 @@
       <div class="home-columns">
         <div class="home-benefits">
           <h3>What We Offer</h3>
-            <ul>
-              <li>Personalized coaching for Obesity, Diabetes, and Blood Pressure management</li>
-              <li>Strategies to boost your energy and support healthy weight loss</li>
-              <li>Holistic lifestyle changes tailored to your unique needs</li>
-              <li>1-on-1 sessions and group support options</li>
-              <li><strong>Coming soon: Mind Body Medicine (MBM) and Healing Touch sessions</strong></li>
+          <ul>
+            <li>Personalized coaching for Obesity, Diabetes, and Blood Pressure management</li>
+            <li>Strategies to boost your energy and support healthy weight loss</li>
+            <li>Holistic lifestyle changes tailored to your unique needs</li>
+            <li>1-on-1 sessions and group support options</li>
           </ul>
         </div>
         <div class="home-visual">
@@ -433,18 +424,14 @@
         <strong>Did You Know?</strong> Managing blood pressure, diabetes, and obesity can significantly improve your energy and quality of life.
       </div>
     </section>
-      <section id="services">
-        <div style="background:#F9A825; color:#1D3C34; padding:1rem; border-radius:8px; margin-bottom:1.5rem; text-align:center; font-weight:bold;">
-            Coming soon: Mind Body Medicine (MBM) & Healing Touch sessions!
-        </div>
-        <h2>Our Services</h2>
-        <p>We specialize in coaching clients to manage and improve their health related to Obesity, Diabetes, and Blood Pressure.</p>
-        <p>Our approach integrates energy management and sustainable weight loss strategies tailored to these conditions.</p>
-        <p>We offer personalized 1-on-1 coaching sessions and will soon launch group support programs.</p>
-        <p><strong>Looking ahead: We will also be offering Mind Body Medicine (MBM) and Healing Touch sessions to support your holistic wellness journey.</strong></p>
-        <div class="cta-home">
-          <a href="#contact" class="cta-button">Book a Session</a>
-        </div>
+    <section id="services">
+      <h2>Our Services</h2>
+      <p>We specialize in coaching clients to manage and improve their health related to Obesity, Diabetes, and Blood Pressure.</p>
+      <p>Our approach integrates energy management and sustainable weight loss strategies tailored to these conditions.</p>
+      <p>We offer personalized 1-on-1 coaching sessions and will soon launch group support programs.</p>
+      <div class="cta-home">
+        <a href="#contact" class="cta-button">Book a Session</a>
+      </div>
     </section>
     <section id="bio" class="bio-section">
       <h2>About Zachary D. Jones</h2>
@@ -509,6 +496,13 @@
         </div>
       </div>
       <p class="note">Group coaching and specialized programs available—contact us for details!</p>
+    </section>
+    <section id="coming-soon" class="coming-soon-section">
+      <h2>Coming Soon</h2>
+      <p>
+        We are excited to announce that soon we will be offering <strong>Mind Body Medicine (MBM)</strong> and <strong>Healing Touch</strong> sessions! These holistic practices will provide additional support for your wellness journey, helping you manage stress, improve energy, and promote healing from within.<br><br>
+        <em>Stay tuned for updates and launch dates!</em>
+      </p>
     </section>
     <section id="quiz" class="quiz-section">
       <h2>Is Your Thyroid Holding You Back?</h2>

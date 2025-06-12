@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Energize & Empower Coaching – Health & Wellness Coach in Lakeland, FL</title>
+  <title>Energize & Empower Coaching – Health & Wellness Coaching for Obesity, Diabetes & Blood Pressure</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -158,7 +158,7 @@
       transition: box-shadow 0.2s;
     }
     .whatsapp-btn:hover .wa-icon-bg {
-      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.25), 0 0 0 4px #128C7E33;
+      box-shadow: 0 4px 16px rgba(37,211,102,0.25), 0 0 0 4px #128C7E33;
     }
     .home-section {
       background: var(--white);
@@ -296,93 +296,74 @@
       margin-top: 0;
       color: var(--accent);
     }
-    .resources-section {
+    .pricing-section {
       background: var(--white);
       padding: 2rem;
       margin-bottom: 2rem;
       border-radius: 16px;
       box-shadow: 0 4px 16px rgba(29,60,52,0.07);
     }
-    .resources-section h2 {
+    .pricing-section h2 {
       text-align: center;
+      color: var(--primary);
+      margin-top: 0;
     }
-    .resource-card {
+    .pricing-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .pricing-card {
       background: var(--testimonial-bg);
       border-left: 6px solid var(--accent);
       border-radius: 10px;
       padding: 1.5rem;
-      margin-bottom: 1rem;
+      flex: 1 1 240px;
+      min-width: 220px;
+      max-width: 280px;
+      box-shadow: 0 2px 8px rgba(29,60,52,0.05);
     }
-    .resource-card h3 {
+    .pricing-card h3 {
+      color: var(--accent);
       margin-top: 0;
     }
-    .booking-section {
-      background: var(--white);
-      padding: 2rem;
-      margin-bottom: 2rem;
-      border-radius: 16px;
-      box-shadow: 0 4px 16px rgba(29,60,52,0.07);
-      text-align: center;
-    }
-    .booking-embed {
-      margin: 2rem auto;
-      max-width: 600px;
-      min-height: 600px;
-      background: var(--light);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--primary);
+    .pricing-card .price {
+      font-size: 1.5rem;
       font-weight: bold;
+      color: var(--primary);
+      margin: 0.5rem 0 1rem 0;
     }
-    .process-section {
-  background: #fff;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(29,60,52,0.07);
-}
-.process-section h2 {
-  text-align: center;
-  color: #25705A;
-  margin-top: 0;
-}
-.process-steps {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-}
-.step {
-  background: #FFF3E0;
-  border-left: 6px solid #F9A825;
-  border-radius: 10px;
-  padding: 1.5rem;
-  flex: 1 1 220px;
-  min-width: 220px;
-  max-width: 280px;
-  box-shadow: 0 2px 8px rgba(29,60,52,0.05);
-}
-.step h3 {
-  color: #F9A825;
-  margin-top: 0;
-}
-@media (max-width: 900px) {
-  .process-steps {
-    flex-direction: column;
-    align-items: center;
-  }
-  .step {
-    max-width: 100%;
-  }
-}
+    .pricing-card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .pricing-card li {
+      margin-bottom: 0.5rem;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+    .pricing-card li:before {
+      content: "✔️";
+      position: absolute;
+      left: 0;
+    }
+    .note {
+      text-align: center;
+      font-size: 0.95rem;
+      margin-top: 1.5rem;
+      color: #666;
+    }
     @media (max-width: 900px) {
-      .bio-cards, .home-columns {
+      .bio-cards, .home-columns, .pricing-cards {
         flex-direction: column;
+        align-items: center;
       }
       .home-visual {
         margin-top: 1rem;
+      }
+      .pricing-card {
+        max-width: 100%;
       }
     }
     @media (max-width: 600px) {
@@ -415,25 +396,24 @@
     <a href="#home">Home</a>
     <a href="#services">Services</a>
     <a href="#bio">Bio</a>
-    <a href="#resources">Resources</a>
+    <a href="#pricing">Pricing</a>
     <a href="#quiz">Quiz</a>
-    <a href="#booking">Book a Session</a>
     <a href="#contact">Contact</a>
   </nav>
   <main>
     <section id="home" class="home-section">
       <h2>Welcome to Energize & Empower Coaching</h2>
       <p class="mission">
-        <strong>Our Mission:</strong> To help you reclaim your energy, achieve your healthiest weight, and discover the power of mind-body wellness—so you can thrive every day.
+        <strong>Our Mission:</strong> To help you reclaim your energy, manage your weight, and improve your health by focusing on Obesity, Diabetes, and Blood Pressure.
       </p>
       <div class="home-columns">
         <div class="home-benefits">
           <h3>What We Offer</h3>
           <ul>
-            <li>Personalized coaching for energy, weight, and thyroid wellness</li>
-            <li>Mind Body Medicine groups (coming soon!)</li>
-            <li>Practical strategies for lasting lifestyle change</li>
-            <li>1-on-1 sessions tailored to your needs</li>
+            <li>Personalized coaching for Obesity, Diabetes, and Blood Pressure management</li>
+            <li>Strategies to boost your energy and support healthy weight loss</li>
+            <li>Holistic lifestyle changes tailored to your unique needs</li>
+            <li>1-on-1 sessions and group support options</li>
           </ul>
         </div>
         <div class="home-visual">
@@ -441,24 +421,24 @@
         </div>
       </div>
       <blockquote class="testimonial">
-        “After working with Energize & Empower Coaching, I feel more energetic and confident than I have in years!”
+        “After working with Energize & Empower Coaching, I feel more energetic and confident managing my health!”
         <span>- Happy Client</span>
       </blockquote>
       <div class="cta-home">
-        <a href="#booking" class="cta-button">Book a Free Discovery Call</a>
+        <a href="#contact" class="cta-button">Book a Free Discovery Call</a>
         <a href="mailto:info@zach-jones.net" class="cta-button">Join Our Newsletter</a>
       </div>
       <div class="wellness-tip">
-        <strong>Did You Know?</strong> Even small changes in your daily habits can make a big difference in your energy and mood. Start today!
+        <strong>Did You Know?</strong> Managing blood pressure, diabetes, and obesity can significantly improve your energy and quality of life.
       </div>
     </section>
     <section id="services">
       <h2>Our Services</h2>
-      <p>We help clients improve their energy levels, lose weight, and understand how thyroid function can interfere with day-to-day life.</p>
-      <p>We will be starting Mind Body Medicine groups in the future to support holistic wellness.</p>
-      <p>Currently, we offer 1-on-1 coaching sessions where we meet with clients on an individual basis.</p>
+      <p>We specialize in coaching clients to manage and improve their health related to Obesity, Diabetes, and Blood Pressure.</p>
+      <p>Our approach integrates energy management and sustainable weight loss strategies tailored to these conditions.</p>
+      <p>We offer personalized 1-on-1 coaching sessions and will soon launch group support programs.</p>
       <div class="cta-home">
-        <a href="#booking" class="cta-button">Book a Session</a>
+        <a href="#contact" class="cta-button">Book a Session</a>
       </div>
     </section>
     <section id="bio" class="bio-section">
@@ -487,38 +467,43 @@
         </div>
       </div>
     </section>
-    <section id="process" class="process-section">
-  <h2>My Coaching Process: Simple and Effective</h2>
-  <div class="process-steps">
-    <div class="step">
-      <h3>1. Initial Assessment</h3>
-      <p>We’ll start with a comprehensive conversation about your health, lifestyle, and goals. I’ll listen to your story, assess your needs, and gather all the information to create a plan that’s right for you.</p>
-    </div>
-    <div class="step">
-      <h3>2. Personalized Plan</h3>
-      <p>Based on your assessment, I’ll design a customized coaching plan tailored to your unique goals and challenges. Together, we’ll set clear, achievable steps to help you move forward.</p>
-    </div>
-    <div class="step">
-      <h3>3. Ongoing Support</h3>
-      <p>You’ll receive regular check-ins, practical guidance, and encouragement as you work toward your goals. I’ll be there to help you overcome obstacles, celebrate wins, and keep you motivated.</p>
-    </div>
-    <div class="step">
-      <h3>4. Progress & Adjustment</h3>
-      <p>We’ll review your progress together and adjust your plan as needed. My goal is to help you build lasting habits and achieve sustainable results.</p>
-    </div>
-  </div>
-</section>
-    <section id="resources" class="resources-section">
-      <h2>Wellness Resources</h2>
-      <div class="resource-card">
-        <h3>Free Wellness Guide</h3>
-        <p>Download our free guide to healthy living, including tips for boosting energy, managing thyroid health, and simple recipes for busy people.</p>
-        <a href="#contact" class="cta-button">Get the Guide</a>
+    <section id="pricing" class="pricing-section">
+      <h2>Coaching Packages & Pricing</h2>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3>Single Session</h3>
+          <p class="price">$150</p>
+          <ul>
+            <li>60-minute one-on-one session</li>
+            <li>Customized health assessment</li>
+            <li>Actionable wellness plan</li>
+          </ul>
+          <a href="#contact" class="cta-button">Book Now</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Monthly Support</h3>
+          <p class="price">$350/month</p>
+          <ul>
+            <li>Two 60-minute sessions</li>
+            <li>Email support between sessions</li>
+            <li>Personalized resources</li>
+            <li>Weekly check-ins</li>
+          </ul>
+          <a href="#contact" class="cta-button">Book Now</a>
+        </div>
+        <div class="pricing-card">
+          <h3>3-Month Intensive</h3>
+          <p class="price">$1,000</p>
+          <ul>
+            <li>Six 60-minute sessions</li>
+            <li>Unlimited email support</li>
+            <li>Custom meal & exercise plans</li>
+            <li>Progress reviews</li>
+          </ul>
+          <a href="#contact" class="cta-button">Book Now</a>
+        </div>
       </div>
-      <div class="resource-card">
-        <h3>Blog (Coming Soon!)</h3>
-        <p>Check back soon for articles, tips, and stories to support your wellness journey.</p>
-      </div>
+      <p class="note">Group coaching and specialized programs available—contact us for details!</p>
     </section>
     <section id="quiz" class="quiz-section">
       <h2>Is Your Thyroid Holding You Back?</h2>
@@ -553,15 +538,6 @@
       </form>
       <div id="quiz-result" class="quiz-result"></div>
     </section>
-    <section id="booking" class="booking-section">
-      <h2>Book a Session</h2>
-      <p>Ready to take the next step? Schedule your free discovery call or coaching session below.</p>
-      <div class="booking-embed">
-        <!-- Replace with your Calendly or Acuity embed code -->
-        <p>Online booking coming soon! For now, please contact us below.</p>
-      </div>
-      <a href="#contact" class="cta-button">Contact Us to Book</a>
-    </section>
     <section id="contact">
       <h2>Contact Us</h2>
       <p>Ready to take the next step? Reach out today!</p>
@@ -574,7 +550,7 @@
               <path d="M22.6 19.9c-.3-.2-1.7-.8-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.3-.8-.7-1.3-1.6-1.5-1.9-.2-.3 0-.5.1-.7.1-.1.2-.3.3-.4.1-.1.1-.2.2-.4.1-.2 0-.3 0-.4 0-.1-.7-1.7-.9-2.3-.2-.5-.4-.4-.7-.4h-.6c-.2 0-.4.1-.5.2-.2.2-.7.7-.7 1.6 0 .2 0 .4.1.6.2.5.6 1.5 1.8 2.7 1.3 1.3 2.7 1.7 3.2 1.9.5.2 1 .2 1.3.1.4-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1.1z" fill="#fff"/>
             </svg>
           </span>
-          <span style="font-weight: bold;">Message Us on WhatsApp</span>
+          <span style="font-weight: bold; font-size: 1.08rem;">Message Us on WhatsApp</span>
         </a>
         <a href="mailto:info@zach-jones.net" class="contact-btn email-btn">
           <span style="vertical-align: middle; margin-right: 8px;">
